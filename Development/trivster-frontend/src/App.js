@@ -46,7 +46,7 @@ class App extends Component {
   }
 
   getGame = (categoryNumber, difficultySelection) => {
-    const url = 'http://localhost:3000/api/v1/games'
+    const url = 'https://trivster-backend.herokuapp.com/api/v1/games'
     const data = {category: categoryNumber, difficulty: difficultySelection.toLowerCase()}
     // debugger;
     const options = {
